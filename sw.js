@@ -1,10 +1,11 @@
 // PDF-Werkbank – Offline-Cache. Bei Änderungen an den Dateien VERSION erhöhen.
-const VERSION = 'v1';
+const VERSION = 'v3';
 const CACHE = 'pdf-werkbank-' + VERSION;
 const FILES = [
   './', './index.html', './manifest.json',
   './lib/pdf-lib.min.js', './lib/pdf.min.js', './lib/pdf.worker.min.js',
-  './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png'
+  './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png',
+  './icons/file-pdf-32.png', './icons/file-pdf-48.png', './icons/file-pdf-64.png', './icons/file-pdf-128.png', './icons/file-pdf-256.png'
 ];
 
 self.addEventListener('install', e => {

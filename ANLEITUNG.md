@@ -44,10 +44,24 @@ Dauer: etwa 10 Minuten. Du brauchst deinen GitHub-Account und Microsoft Edge ode
 
 Ab jetzt öffnet ein Doppelklick auf eine PDF direkt die PDF-Werkbank. Wenn du mehrere PDFs markierst und gemeinsam öffnest, werden sie zu einem Dokument zusammengefügt.
 
-## Speichern
+## Funktionen
 
-**Speichern** öffnet einen normalen Windows-Speicherdialog. Dort kannst du einen Ort und einen Namen wählen. Vorgeschlagen wird `<Name>-bearbeitet.pdf`.
+- **Lesen (L):** Text markieren und mit Strg+C kopieren
+- **Suchen (Strg+F):** Enter springt zum nächsten Treffer, Umschalt+Enter zum vorherigen
+- **Umbenennen:** Auf den Dateinamen oben links klicken, den Namen ändern und mit Enter bestätigen. Beim nächsten **Speichern** wird die Datei umbenannt.
+- **Speichern (Strg+S):** Überschreibt die geöffnete Datei. Beim ersten Mal fragt der Browser, ob die App die Datei ändern darf.
+- **Speichern unter (Strg+Umschalt+S):** Speichert als neue Datei.
+- **Drucken (Strg+P):** Druckt mit allen Änderungen, die du gemacht hast.
+- **Senden:** Öffnet das Windows-Teilen-Fenster. Dort wählst du Outlook oder Mail aus, die PDF ist dann schon angehängt.
+- **Schließen (X):** Schließt das Dokument. Auch die letzte Seite kann jetzt gelöscht werden.
+- **Zoom:** Strg+Mausrad, oder die Lupen-Buttons in der Werkzeugleiste
 
 ## Updates
 
-Wenn du eine neue Version der Dateien hochlädst, erhöhe in `sw.js` die Zeile `const VERSION = 'v1';` (zum Beispiel auf `'v2'`). Danach die App einmal schließen und wieder öffnen.
+1. Lade die neuen Dateien im Repository hoch: **Add file → Upload files**. Vorhandene Dateien werden dabei ersetzt.
+2. Warte ein bis zwei Minuten, dann die App schließen und wieder öffnen. Falls die alte Version erscheint, die App noch einmal schließen und öffnen.
+3. **Damit Windows das neue PDF-Symbol übernimmt, muss die App einmal neu installiert werden:**
+   - Edge: `edge://apps` öffnen, bei PDF-Werkbank auf **⋯ → Deinstallieren** klicken
+   - Chrome: `chrome://apps` öffnen, Rechtsklick auf PDF-Werkbank → **Aus Chrome entfernen**
+   - Danach die Seite erneut öffnen, **App installieren** wählen und Schritt 5 wiederholen.
+   - Falls Windows weiterhin das alte Symbol zeigt, einmal ab- und wieder anmelden. Windows speichert Dateisymbole zwischen.
